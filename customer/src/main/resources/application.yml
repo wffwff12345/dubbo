@@ -1,0 +1,14 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: customer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+dubbo:
+  registry:
+    address: spring-cloud://localhost
+  cloud:
+    subscribed-services: provider
