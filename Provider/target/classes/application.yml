@@ -2,7 +2,7 @@ server:
   port: 9091
 spring:
   application:
-    name: provider
+    name: dubbo-provider
   cloud:
     nacos:
       discovery:
@@ -13,6 +13,6 @@ dubbo:
   protocols:
     dubbo:
       name: dubbo
-      port: -1
+      port: 20881
   registry:
     address: spring-cloud://localhost
