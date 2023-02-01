@@ -1,7 +1,7 @@
 package com.example.controller;
 
 import com.example.Interface.TestService;
-import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/dubbo")
 @RestController
 public class TestController {
-    @Reference
+    @DubboReference
     private TestService service;
 
     @PostMapping("/test")

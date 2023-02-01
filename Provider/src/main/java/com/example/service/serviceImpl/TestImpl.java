@@ -1,9 +1,9 @@
 package com.example.service.serviceImpl;
 
 import com.example.Interface.TestService;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
-@Service
+@DubboService
 public class TestImpl implements TestService {
     @Override
 
